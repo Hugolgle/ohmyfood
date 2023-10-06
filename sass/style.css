@@ -1,1 +1,78 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", sans-serif;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  z-index: 1;
+}
+
+img {
+  width: 110px;
+}
+
+div.localisation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  background-color: #eaeaea;
+  box-shadow: 0px 55px 10px -58px rgba(0, 0, 0, 0.5) inset;
+}
+div.localisation i {
+  margin-right: 10px;
+  font-size: 14px;
+}
+div.localisation p {
+  font-size: 12px;
+  font-weight: 900;
+}
+
+section.first {
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  text-align: center;
+  background-color: #f0f0f0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+}
+section.first h2 {
+  font-size: 25px;
+}
+section.first button {
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  padding: 15px;
+  width: 200px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.2);
+}
+section.first button a {
+  color: #fff;
+  font-weight: 900;
+}/*# sourceMappingURL=style.css.map */
