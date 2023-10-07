@@ -134,7 +134,7 @@ section.fonctionnement div.blocFonction div.function i.primary {
 
 section.restaurant {
   background-color: #f0f0f0;
-  padding: 45px 20px;
+  padding: 40px 20px;
 }
 section.restaurant div.restaurant div.cards {
   display: flex;
@@ -196,4 +196,24 @@ section.restaurant div.restaurant div.cards div.new1 {
 }
 section.restaurant div.restaurant div.cards div.new2 {
   right: 20px;
+}
+
+footer {
+  padding: 15px;
+  background-color: #353535;
+}
+footer div.footer {
+  display: flex;
+  flex-direction: column;
+  height: 65px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer div.footer a {
+  color: #fff;
+  font-size: 10px;
+}
+footer div.footer a i {
+  width: 20px;
 }/*# sourceMappingURL=style.css.map */

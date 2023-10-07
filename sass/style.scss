@@ -161,7 +161,7 @@ section.fonctionnement {
 
 section.restaurant {
     background-color: #f0f0f0;
-    padding: 45px 20px;
+    padding: 40px 20px;
 
     div.restaurant {
         div.cards {
@@ -237,6 +237,29 @@ section.restaurant {
 
             div.new2 {
                 right: 20px;
+            }
+        }
+    }
+}
+
+footer {
+    padding: 15px;
+    background-color: #353535;
+
+    div.footer {
+        display: flex;
+        flex-direction: column;
+        height: 65px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            color: #fff;
+            font-size: 10px;
+
+            i {
+                width: 20px;
             }
         }
     }
