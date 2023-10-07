@@ -7,14 +7,15 @@
 
 h2 {
   font-size: 16px;
+  font-weight: 900;
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 p {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 a {
@@ -75,4 +76,54 @@ section.first button {
 section.first button a {
   color: #fff;
   font-weight: 900;
+}
+
+section.fonctionnement {
+  padding: 40px 20px;
+}
+section.fonctionnement div.blocFonction {
+  display: flex;
+  flex-direction: column;
+  height: 190px;
+  align-items: end;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+section.fonctionnement div.blocFonction div.function {
+  display: flex;
+  align-items: center;
+  width: 97%;
+  height: 50px;
+  background-color: #eaeaea;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+section.fonctionnement div.blocFonction div.function div {
+  position: absolute;
+  left: 18px;
+  width: 20px;
+  height: 20px;
+  background-color: #9356DC;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.fonctionnement div.blocFonction div.function div p {
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 900;
+}
+section.fonctionnement div.blocFonction div.function i,
+section.fonctionnement div.blocFonction div.function h3 {
+  margin-left: 25px;
+}
+section.fonctionnement div.blocFonction div.function i.grey {
+  color: gray;
+  font-size: 14px;
+}
+section.fonctionnement div.blocFonction div.function i.primary {
+  color: #9356DC;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
