@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+
+$degrade: linear-gradient(to top, $primary, $secondary);
+
+// Général
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 12px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+// Header
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+
+    a {
+        position: absolute;
+        left: 15px;
+    }
+
+    img {
+        width: 110px;
+    }
+}
+
+
+
+// Main
+
+img {
+    width: 100%;
+}
+
+section.all {
+    background-color: #f6f6f6;
+    border-radius: 35px 35px 0 0;
+    margin-top: -45px;
+    z-index: 1;
+    position: relative;
+    padding: 40px 10px;
+
+    div.head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+            margin-right: 30px;
+        }
+
+    }
+
+    div.menu {
+        display: flex;
+        flex-direction: column;
+        height: 225px;
+        width: 100%;
+        justify-content: space-evenly;
+
+        div.plat {
+            background-color: #ffffff;
+            width: 100%;
+            border-radius: 10px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 0 10px;
+
+            div {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        >h3::after {
+            content: "";
+            display: block;
+            position: relative;
+            bottom: -3px;
+            width: 30px;
+            height: 2px;
+            background: #98e2cf;
+        }
+    }
+
+    div.btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+        a {
+            background: $degrade;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 40px;
+            font-size: 13px;
+            color: #fff;
+            font-weight: 900;
+        }
+    }
+
+
+
+
+}
+
+
+footer {
+    padding: 15px;
+    background-color: #353535;
+
+    div.footer {
+        display: flex;
+        flex-direction: column;
+        height: 65px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            color: #fff;
+            font-size: 10px;
+
+            i {
+                width: 20px;
+            }
+        }
+    }
+}
