@@ -42,8 +42,14 @@ header img {
   width: 110px;
 }
 
-img {
+div.img {
+  height: 200px;
+}
+div.img img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 section.all {
@@ -52,12 +58,13 @@ section.all {
   margin-top: -45px;
   z-index: 1;
   position: relative;
-  padding: 40px 10px;
+  padding: 35px 10px;
 }
 section.all div.head {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 25px;
 }
 section.all div.head i {
   margin-right: 30px;
@@ -65,9 +72,9 @@ section.all div.head i {
 section.all div.menu {
   display: flex;
   flex-direction: column;
-  height: 225px;
   width: 100%;
   justify-content: space-evenly;
+  margin: 10px 0;
 }
 section.all div.menu div.plat {
   background-color: #ffffff;
@@ -78,10 +85,14 @@ section.all div.menu div.plat {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0 10px;
+  margin: 5px 0;
 }
 section.all div.menu div.plat div {
   display: flex;
   justify-content: space-between;
+}
+section.all div.menu > h3 {
+  margin-bottom: 10px;
 }
 section.all div.menu > h3::after {
   content: "";
