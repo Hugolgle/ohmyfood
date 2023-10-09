@@ -132,6 +132,7 @@ section.fonctionnement {
         @media (min-width: 1024px) {
             flex-direction: row;
             align-items: start;
+            justify-content: space-between;
         }
 
         div.function {
@@ -175,13 +176,13 @@ section.fonctionnement {
 
             div.deux {
                 @media (min-width: 1024px) {
-                    left: 36.8%;
+                    left: 37.5%;
                 }
             }
 
             div.trois {
                 @media (min-width: 1024px) {
-                    left: 66.2%;
+                    left: 64.7%;
                 }
             }
 
@@ -209,6 +210,10 @@ section.restaurant {
     background-color: #f0f0f0;
     padding: 40px 20px;
 
+    @media (min-width: 1024px) {
+        padding: 40px 120px;
+    }
+
     div.restaurant {
         div.cards {
             display: flex;
@@ -217,8 +222,19 @@ section.restaurant {
             justify-content: space-evenly;
             margin-top: 15px;
 
+            @media (min-width: 1024px) {
+                display: grid;
+                grid-template-columns: 45% 45%;
+                justify-content: space-between;
+                margin-top: 0;
+            }
+
             a {
                 width: 100%;
+
+                @media (min-width: 1024px) {
+                    margin: 15px 0;
+                }
 
                 div.card {
                     width: 100%;
@@ -261,8 +277,6 @@ section.restaurant {
                 }
             }
 
-
-
             div.new {
                 position: absolute;
 
@@ -280,10 +294,18 @@ section.restaurant {
 
             div.new1 {
                 right: 20px;
+
+                @media (min-width: 1024px) {
+                    right: 594px;
+                }
             }
 
             div.new2 {
                 right: 20px;
+
+                @media (min-width: 1024px) {
+                    right: 121px;
+                }
             }
         }
     }
@@ -293,6 +315,12 @@ footer {
     padding: 15px;
     background-color: #353535;
 
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: end;
+    }
+
     div.footer {
         display: flex;
         flex-direction: column;
@@ -301,12 +329,24 @@ footer {
         display: flex;
         justify-content: space-evenly;
 
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            margin-top: 0;
+            align-items: end;
+            margin-right: 20px;
+        }
+
         a {
             color: #fff;
             font-size: 10px;
 
+            @media (min-width: 1024px) {
+                margin: 0 20px;
+            }
+
             i {
-                width: 20px;
+                width: 15px;
             }
         }
     }
