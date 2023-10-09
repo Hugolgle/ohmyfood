@@ -43,6 +43,11 @@ header {
     align-items: center;
     justify-content: center;
     height: 40px;
+
+    @media (min-width: 1024px) {
+        height: 60px;
+    }
+
 }
 
 img {
@@ -58,6 +63,10 @@ div.localisation {
     height: 35px;
     background-color: #eaeaea;
     box-shadow: 0px 55px 10px -58px rgba(0, 0, 0, 0.5) inset;
+
+    @media (min-width: 1024px) {
+        box-shadow: none;
+    }
 
     i {
         margin-right: 10px;
@@ -80,27 +89,38 @@ section.first {
     align-items: center;
     padding: 40px 20px;
 
+    @media (min-width: 1024px) {
+        height: 135px;
+        padding: 30px 20px;
+    }
+
     h2 {
         font-size: 25px;
     }
 
-    button {
+    a {
         background: $degrade;
-        padding: 15px;
-        width: 200px;
+        padding: 10px 30px;
         border: none;
+        font-size: 12px;
         border-radius: 50px;
         box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.2);
+        color: #fff;
+        font-weight: 900;
 
-        a {
-            color: #fff;
-            font-weight: 900;
+        @media (min-width: 1024px) {
+            // height: 135px;
         }
     }
 }
 
 section.fonctionnement {
     padding: 40px 20px;
+
+    @media (min-width: 1024px) {
+        padding: 40px 120px;
+    }
+
 
     div.blocFonction {
         display: flex;
@@ -110,6 +130,12 @@ section.fonctionnement {
         justify-content: space-between;
         margin-top: 15px;
 
+        @media (min-width: 1024px) {
+            flex-direction: row;
+            align-items: start;
+            height: auto;
+        }
+
         div.function {
             display: flex;
             align-items: center;
@@ -118,6 +144,10 @@ section.fonctionnement {
             background-color: #eaeaea;
             border-radius: 15px;
             box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+
+            @media (min-width: 1024px) {
+                width: 30%;
+            }
 
             div {
                 position: absolute;
@@ -138,6 +168,24 @@ section.fonctionnement {
                 }
             }
 
+            div.un {
+                @media (min-width: 1024px) {
+                    left: 110px;
+                }
+            }
+
+            div.deux {
+                @media (min-width: 1024px) {
+                    left: 36.8%;
+                }
+            }
+
+            div.trois {
+                @media (min-width: 1024px) {
+                    left: 66.2%;
+                }
+            }
+
             i,
             h3 {
                 margin-left: 25px;
@@ -155,6 +203,7 @@ section.fonctionnement {
 
         }
     }
+
 }
 
 section.restaurant {

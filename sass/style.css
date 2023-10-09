@@ -33,6 +33,11 @@ header {
   justify-content: center;
   height: 40px;
 }
+@media (min-width: 1024px) {
+  header {
+    height: 60px;
+  }
+}
 
 img {
   width: 110px;
@@ -45,6 +50,11 @@ div.localisation {
   height: 35px;
   background-color: #eaeaea;
   box-shadow: 0px 55px 10px -58px rgba(0, 0, 0, 0.5) inset;
+}
+@media (min-width: 1024px) {
+  div.localisation {
+    box-shadow: none;
+  }
 }
 div.localisation i {
   margin-right: 10px;
@@ -65,24 +75,32 @@ section.first {
   align-items: center;
   padding: 40px 20px;
 }
+@media (min-width: 1024px) {
+  section.first {
+    height: 135px;
+    padding: 30px 20px;
+  }
+}
 section.first h2 {
   font-size: 25px;
 }
-section.first button {
+section.first a {
   background: linear-gradient(to top, #9356DC, #FF79DA);
-  padding: 15px;
-  width: 200px;
+  padding: 10px 30px;
   border: none;
+  font-size: 12px;
   border-radius: 50px;
   box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.2);
-}
-section.first button a {
   color: #fff;
   font-weight: 900;
 }
-
 section.fonctionnement {
   padding: 40px 20px;
+}
+@media (min-width: 1024px) {
+  section.fonctionnement {
+    padding: 40px 120px;
+  }
 }
 section.fonctionnement div.blocFonction {
   display: flex;
@@ -92,6 +110,13 @@ section.fonctionnement div.blocFonction {
   justify-content: space-between;
   margin-top: 15px;
 }
+@media (min-width: 1024px) {
+  section.fonctionnement div.blocFonction {
+    flex-direction: row;
+    align-items: start;
+    height: auto;
+  }
+}
 section.fonctionnement div.blocFonction div.function {
   display: flex;
   align-items: center;
@@ -100,6 +125,11 @@ section.fonctionnement div.blocFonction div.function {
   background-color: #eaeaea;
   border-radius: 15px;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1024px) {
+  section.fonctionnement div.blocFonction div.function {
+    width: 30%;
+  }
 }
 section.fonctionnement div.blocFonction div.function div {
   position: absolute;
@@ -117,6 +147,21 @@ section.fonctionnement div.blocFonction div.function div p {
   font-size: 12px;
   color: #fff;
   font-weight: 900;
+}
+@media (min-width: 1024px) {
+  section.fonctionnement div.blocFonction div.function div.un {
+    left: 110px;
+  }
+}
+@media (min-width: 1024px) {
+  section.fonctionnement div.blocFonction div.function div.deux {
+    left: 36.8%;
+  }
+}
+@media (min-width: 1024px) {
+  section.fonctionnement div.blocFonction div.function div.trois {
+    left: 66.2%;
+  }
 }
 section.fonctionnement div.blocFonction div.function i,
 section.fonctionnement div.blocFonction div.function h3 {
