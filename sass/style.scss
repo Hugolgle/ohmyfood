@@ -212,6 +212,8 @@ section.restaurant {
 
             a {
                 width: 100%;
+                display: flex;
+                justify-content: end;
 
                 @media (min-width: 1024px) {
                     margin: 15px 0;
@@ -248,8 +250,6 @@ section.restaurant {
                         align-items: center;
                         padding: 0 10px;
 
-                        div.txt {}
-
                         i {
                             margin-right: 10px;
                         }
@@ -260,8 +260,11 @@ section.restaurant {
 
             div.new {
                 position: absolute;
-
                 padding: 10px;
+                margin-top: 5px;
+                display: flex;
+
+                @media (min-width: 1024px) {}
 
                 p {
                     background-color: #99e2d0;
@@ -270,22 +273,6 @@ section.restaurant {
                     border-radius: 2px;
                     font-weight: 900;
                     color: green;
-                }
-            }
-
-            div.new1 {
-                right: 20px;
-
-                @media (min-width: 1024px) {
-                    right: 594px;
-                }
-            }
-
-            div.new2 {
-                right: 20px;
-
-                @media (min-width: 1024px) {
-                    right: 121px;
                 }
             }
         }

@@ -186,6 +186,8 @@ section.restaurant div.restaurant div.cards {
 }
 section.restaurant div.restaurant div.cards a {
   width: 100%;
+  display: flex;
+  justify-content: end;
 }
 @media (min-width: 1024px) {
   section.restaurant div.restaurant div.cards a {
@@ -229,6 +231,8 @@ section.restaurant div.restaurant div.cards a div.card div.info i {
 section.restaurant div.restaurant div.cards div.new {
   position: absolute;
   padding: 10px;
+  margin-top: 5px;
+  display: flex;
 }
 section.restaurant div.restaurant div.cards div.new p {
   background-color: #99e2d0;
@@ -237,22 +241,6 @@ section.restaurant div.restaurant div.cards div.new p {
   border-radius: 2px;
   font-weight: 900;
   color: green;
-}
-section.restaurant div.restaurant div.cards div.new1 {
-  right: 20px;
-}
-@media (min-width: 1024px) {
-  section.restaurant div.restaurant div.cards div.new1 {
-    right: 594px;
-  }
-}
-section.restaurant div.restaurant div.cards div.new2 {
-  right: 20px;
-}
-@media (min-width: 1024px) {
-  section.restaurant div.restaurant div.cards div.new2 {
-    right: 121px;
-  }
 }
 
 footer {
