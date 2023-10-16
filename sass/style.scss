@@ -149,9 +149,8 @@ section.fonctionnement {
                 width: 30%;
             }
 
-            div {
-                position: absolute;
-                left: 18px;
+            div.pastille {
+                margin-left: -10px;
                 width: 20px;
                 height: 20px;
                 background-color: $primary;
@@ -165,24 +164,6 @@ section.fonctionnement {
                     font-size: 12px;
                     color: #fff;
                     font-weight: 900;
-                }
-            }
-
-            div.un {
-                @media (min-width: 1024px) {
-                    left: 110px;
-                }
-            }
-
-            div.deux {
-                @media (min-width: 1024px) {
-                    left: 37.5%;
-                }
-            }
-
-            div.trois {
-                @media (min-width: 1024px) {
-                    left: 64.7%;
                 }
             }
 
