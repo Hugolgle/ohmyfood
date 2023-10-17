@@ -94,8 +94,9 @@ section.all {
         margin-top: -45px;
         position: relative;
         padding: 35px 10px;
+        width: 100%;
 
-        @media (min-width: 1024px) {
+        @media (min-width: 768px) {
             margin-top: -25px;
             width: 75%;
             padding: 35px 120px;
@@ -117,6 +118,12 @@ section.all {
                 @media (min-width: 1024px) {
                     margin-left: 30px;
                 }
+            }
+
+            i:hover {
+                font-weight: 900;
+                color: #9356DC;
+                cursor: pointer;
             }
 
         }

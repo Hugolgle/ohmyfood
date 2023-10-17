@@ -9,9 +9,12 @@ html {
   font-family: "roboto", sans-serif;
 }
 
+h1 {
+  font-size: 22px;
+}
+
 h2 {
   font-size: 16px;
-  font-weight: 900;
 }
 
 h3 {
@@ -31,11 +34,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
+  height: 96px;
 }
 @media (min-width: 1024px) {
   header {
-    height: 60px;
+    height: 63px;
   }
 }
 
@@ -47,7 +50,7 @@ div.localisation {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 35px;
+  height: 50px;
   background-color: #eaeaea;
   box-shadow: 0px 55px 10px -58px rgba(0, 0, 0, 0.5) inset;
 }
@@ -102,6 +105,11 @@ section.fonctionnement {
     padding: 40px 120px;
   }
 }
+@media (min-width: 768px) {
+  section.fonctionnement {
+    padding: 40px 80px;
+  }
+}
 section.fonctionnement div.blocFonction {
   display: flex;
   flex-direction: column;
@@ -109,7 +117,7 @@ section.fonctionnement div.blocFonction {
   justify-content: space-evenly;
   margin-top: 15px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   section.fonctionnement div.blocFonction {
     flex-direction: row;
     align-items: start;
@@ -126,7 +134,7 @@ section.fonctionnement div.blocFonction div.function {
   margin: 5px 0;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   section.fonctionnement div.blocFonction div.function {
     width: 30%;
   }
@@ -169,6 +177,11 @@ section.restaurant {
     padding: 40px 120px;
   }
 }
+@media (min-width: 768px) {
+  section.restaurant {
+    padding: 40px 80px;
+  }
+}
 section.restaurant div.restaurant div.cards {
   display: flex;
   flex-direction: column;
@@ -176,7 +189,7 @@ section.restaurant div.restaurant div.cards {
   justify-content: space-evenly;
   margin-top: 15px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   section.restaurant div.restaurant div.cards {
     display: grid;
     grid-template-columns: 45% 45%;
@@ -189,14 +202,14 @@ section.restaurant div.restaurant div.cards a {
   display: flex;
   justify-content: end;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   section.restaurant div.restaurant div.cards a {
     margin: 15px 0;
   }
 }
 section.restaurant div.restaurant div.cards a div.card {
   width: 100%;
-  height: 170px;
+  height: 235px;
   background-color: #fff;
   border-radius: 10px;
   margin: 5px 0;
@@ -215,8 +228,8 @@ section.restaurant div.restaurant div.cards a div.card div.img img {
   border-radius: 10px 10px 0 0;
 }
 section.restaurant div.restaurant div.cards a div.card div.img img.second {
-  -o-object-position: 0px -106px;
-     object-position: 0px -106px;
+  -o-object-position: 0px -144px;
+     object-position: 0px -144px;
 }
 section.restaurant div.restaurant div.cards a div.card div.info {
   height: 30%;
@@ -224,9 +237,18 @@ section.restaurant div.restaurant div.cards a div.card div.info {
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
+  font-size: 16px;
+}
+section.restaurant div.restaurant div.cards a div.card div.info div.txt p {
+  font-size: 16px;
 }
 section.restaurant div.restaurant div.cards a div.card div.info i {
   margin-right: 10px;
+  font-size: 22px;
+}
+section.restaurant div.restaurant div.cards a div.card div.info i:hover {
+  font-weight: 900;
+  color: #9356DC;
 }
 section.restaurant div.restaurant div.cards div.new {
   position: absolute;
@@ -240,7 +262,7 @@ section.restaurant div.restaurant div.cards div.new p {
   font-size: 10px;
   border-radius: 2px;
   font-weight: 900;
-  color: green;
+  color: #008766;
 }
 
 footer {
@@ -257,7 +279,7 @@ footer {
 footer div.footer {
   display: flex;
   flex-direction: column;
-  height: 65px;
+  height: 114px;
   margin-top: 5px;
   display: flex;
   justify-content: space-evenly;

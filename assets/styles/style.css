@@ -78,8 +78,9 @@ section.all div.all {
   margin-top: -45px;
   position: relative;
   padding: 35px 10px;
+  width: 100%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   section.all div.all {
     margin-top: -25px;
     width: 75%;
@@ -104,6 +105,11 @@ section.all div.all div.head i {
   section.all div.all div.head i {
     margin-left: 30px;
   }
+}
+section.all div.all div.head i:hover {
+  font-weight: 900;
+  color: #9356DC;
+  cursor: pointer;
 }
 section.all div.all div.menu {
   display: flex;
