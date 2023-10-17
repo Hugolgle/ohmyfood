@@ -316,6 +316,10 @@ footer {
             i {
                 width: 15px;
             }
+
+            i.hand {
+                transform: rotate(-45deg);
+            }
         }
     }
 }

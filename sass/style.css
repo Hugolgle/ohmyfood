@@ -282,4 +282,7 @@ footer div.footer a {
 }
 footer div.footer a i {
   width: 15px;
+}
+footer div.footer a i.hand {
+  transform: rotate(-45deg);
 }/*# sourceMappingURL=style.css.map */
