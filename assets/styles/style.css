@@ -149,6 +149,9 @@ section.all div.all div.menu {
   width: 100%;
   justify-content: space-evenly;
   margin: 10px 0;
+  opacity: 0%;
+  animation: 3s anim forwards;
+  transition: 1s;
 }
 section.all div.all div.menu div.plat {
   display: flex;
@@ -198,6 +201,11 @@ section.all div.all div.menu > h3::after {
   width: 30px;
   height: 2px;
   background: #98e2cf;
+}
+@keyframes anim {
+  100% {
+    opacity: 100%;
+  }
 }
 section.all div.btn {
   display: flex;
