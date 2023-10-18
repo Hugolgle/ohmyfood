@@ -251,4 +251,7 @@ footer div.footer a i {
 }
 footer div.footer a i.hand {
   transform: rotate(-45deg);
+}
+footer div.footer a.gras {
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

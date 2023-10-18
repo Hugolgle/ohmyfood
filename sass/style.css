@@ -40,7 +40,7 @@ a {
 }
 
 button {
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   padding: 15px 24px;
   border: none;
   font-size: 16px;
@@ -49,7 +49,13 @@ button {
   color: #fff;
   font-weight: 900;
   cursor: pointer;
+  transition: 0.5s;
 }
+button:hover {
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+}
+
 header {
   display: flex;
   align-items: center;
@@ -321,4 +327,7 @@ footer div.footer a i {
 }
 footer div.footer a i.hand {
   transform: rotate(-45deg);
+}
+footer div.footer a.gras {
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
