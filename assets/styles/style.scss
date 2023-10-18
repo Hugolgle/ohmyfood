@@ -73,12 +73,14 @@ header {
     @media (min-width: 1024px) {
         height: 96px;
     }
+
+    a {
+        position: absolute;
+        left: 15px;
+    }
 }
 
-a {
-    position: absolute;
-    left: 15px;
-}
+
 
 img {
     width: 162px;
@@ -245,47 +247,6 @@ section.all {
     }
 }
 
-
-// footer {
-//     padding: 15px;
-//     background-color: #353535;
-
-//     @media (min-width: 1024px) {
-//         display: flex;
-//         flex-direction: row-reverse;
-//         align-items: end;
-//     }
-
-//     div.footer {
-//         display: flex;
-//         flex-direction: column;
-//         height: 65px;
-//         margin-top: 5px;
-//         display: flex;
-//         justify-content: space-evenly;
-
-//         @media (min-width: 1024px) {
-//             display: flex;
-//             flex-direction: row;
-//             margin-top: 0;
-//             align-items: end;
-//             margin-right: 20px;
-//         }
-
-//         a {
-//             color: #fff;
-//             font-size: 10px;
-
-//             @media (min-width: 1024px) {
-//                 margin: 0 20px;
-//             }
-
-//             i {
-//                 width: 15px;
-//             }
-//         }
-//     }
-// }
 
 footer {
     padding: 15px;
