@@ -174,7 +174,6 @@ section.fonctionnement div.blocFonction div.function i,
 section.fonctionnement div.blocFonction div.function h3 {
   margin-left: 25px;
   font-size: 16px;
-  font-weight: 500;
 }
 section.fonctionnement div.blocFonction div.function i.grey {
   color: #7E7E7E;
@@ -297,12 +296,10 @@ footer div.footer {
   flex-direction: column;
   height: 114px;
   margin-top: 5px;
-  display: flex;
   justify-content: space-evenly;
 }
 @media (min-width: 1024px) {
   footer div.footer {
-    display: flex;
     flex-direction: row;
     margin-top: 0;
     align-items: end;
