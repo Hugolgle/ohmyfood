@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 $primary: #9356DC;
 $secondary: #FF79DA;
@@ -19,17 +20,25 @@ html {
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Shrikhand', serif;
+}
+
 h2 {
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 300;
 }
 
 h3 {
-    font-size: 12px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 p {
-    font-size: 12px;
+    font-size: 15.04px;
+    font-weight: 300;
 }
 
 a {
@@ -37,27 +46,49 @@ a {
     text-decoration: none;
 }
 
+button {
+    background: $degrade;
+    padding: 15px 24px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-weight: 900;
+
+    @media (min-width: 1024px) {
+        // height: 135px;
+    }
+}
+
 // Header
+
 
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: 63px;
 
     @media (min-width: 1024px) {
-        height: 60px;
-    }
-
-    a {
-        position: absolute;
-        left: 15px;
-    }
-
-    img {
-        width: 110px;
+        height: 96px;
     }
 }
+
+a {
+    position: absolute;
+    left: 15px;
+}
+
+img {
+    width: 162px;
+    font-weight: 400;
+
+    @media (min-width: 1024px) {
+        width: 200px;
+    }
+}
+
 
 
 

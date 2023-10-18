@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 $primary: #9356DC;
 $secondary: #FF79DA;
@@ -19,24 +19,48 @@ html {
 }
 
 h1 {
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: 700;
+
+    @media (min-width: 1024px) {
+        font-size: 40px;
+    }
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 h3 {
-    font-size: 12px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 p {
-    font-size: 12px;
+    font-size: 17px;
+    font-weight: 300;
 }
 
 a {
     color: #000;
     text-decoration: none;
+}
+
+button {
+    background: $degrade;
+    padding: 15px 24px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+
+    @media (min-width: 1024px) {
+        // height: 135px;
+    }
 }
 
 // Header
@@ -45,16 +69,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 96px;
+    height: 63px;
 
     @media (min-width: 1024px) {
-        height: 63px;
+        height: 96px;
     }
 
 }
 
 img {
-    width: 110px;
+    width: 162px;
+    font-weight: 400;
+
+    @media (min-width: 1024px) {
+        width: 200px;
+    }
 }
 
 // Main
@@ -73,12 +102,14 @@ div.localisation {
 
     i {
         margin-right: 10px;
-        font-size: 14px;
+        font-size: 16px;
+        color: #353535;
     }
 
     p {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 900;
+        color: #353535;
     }
 }
 
@@ -93,27 +124,7 @@ section.first {
     padding: 40px 20px;
 
     @media (min-width: 1024px) {
-        height: 135px;
         padding: 30px 20px;
-    }
-
-    h2 {
-        font-size: 25px;
-    }
-
-    a {
-        background: $degrade;
-        padding: 10px 30px;
-        border: none;
-        font-size: 12px;
-        border-radius: 50px;
-        box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.2);
-        color: #fff;
-        font-weight: 900;
-
-        @media (min-width: 1024px) {
-            // height: 135px;
-        }
     }
 }
 
@@ -177,10 +188,12 @@ section.fonctionnement {
             i,
             h3 {
                 margin-left: 25px;
+                font-size: 16px;
+                font-weight: 500;
             }
 
             i.grey {
-                color: gray;
+                color: #7E7E7E;
                 font-size: 14px;
             }
 
@@ -260,10 +273,9 @@ section.restaurant {
                         justify-content: space-between;
                         align-items: center;
                         padding: 0 10px;
-                        font-size: 16px;
 
                         div.txt p {
-                            font-size: 16px;
+                            font-size: 17px;
                         }
 
                         i {
@@ -291,7 +303,7 @@ section.restaurant {
                 p {
                     background-color: #99e2d0;
                     padding: 4px 10px;
-                    font-size: 10px;
+                    font-size: 14px;
                     border-radius: 2px;
                     font-weight: 900;
                     color: #008766;
@@ -329,14 +341,15 @@ footer {
 
         a {
             color: #fff;
-            font-size: 10px;
+            font-size: 16px;
 
             @media (min-width: 1024px) {
                 margin: 0 20px;
             }
 
             i {
-                width: 15px;
+                width: 13px;
+                margin-right: 10px;
             }
 
             i.hand {
