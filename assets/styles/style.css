@@ -113,6 +113,7 @@ section.all div.all {
   position: relative;
   padding: 35px 10px;
   width: 100%;
+  max-width: 1440px;
 }
 @media (min-width: 768px) {
   section.all div.all {
@@ -225,11 +226,14 @@ section.all div.all div.menu > h2::after {
     opacity: 100%;
   }
 }
-section.all div.all div.menu:nth-child(1) {
-  animation-delay: 1s;
+section.all div.all div.entre {
+  animation-delay: 0.3s;
 }
-section.all div.all div.menu:nth-child(2) {
-  animation-delay: 2s;
+section.all div.all div.plat {
+  animation-delay: 0.6s;
+}
+section.all div.all div.dessert {
+  animation-delay: 0.9s;
 }
 section.all div.btn {
   display: flex;
