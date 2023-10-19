@@ -202,6 +202,7 @@ section.fonctionnement div.blocFonction div.function {
   border-radius: 15px;
   margin: 5px 0;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  padding-right: 10px;
 }
 @media (min-width: 768px) {
   section.fonctionnement div.blocFonction div.function {
@@ -211,6 +212,7 @@ section.fonctionnement div.blocFonction div.function {
 section.fonctionnement div.blocFonction div.function div.pastille {
   margin-left: -10px;
   width: 20px;
+  min-width: 20px;
   height: 20px;
   background-color: #9356DC;
   border-radius: 50px;
@@ -244,10 +246,10 @@ section.restaurant {
 }
 @media (min-width: 1024px) {
   section.restaurant {
-    padding: 40px 120px;
+    padding: 40px 200px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   section.restaurant {
     padding: 40px 80px;
   }
