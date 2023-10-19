@@ -234,11 +234,11 @@ section.all {
                 border-radius: 10px 0 0 10px;
             }
 
-            >h3 {
+            >h2 {
                 margin-bottom: 10px;
             }
 
-            >h3::after {
+            >h2::after {
                 content: "";
                 display: block;
                 position: relative;
@@ -257,15 +257,15 @@ section.all {
             }
         }
 
+        // div.menu:nth-child(1) {
+        //     animation-delay: 1s;
+        // }
+
         div.menu:nth-child(1) {
-            animation-delay: -1s;
+            animation-delay: 1s;
         }
 
         div.menu:nth-child(2) {
-            animation-delay: -3s;
-        }
-
-        div.menu:nth-child(3) {
             animation-delay: 2s;
         }
 
