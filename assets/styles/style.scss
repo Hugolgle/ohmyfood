@@ -148,18 +148,36 @@ section.all {
                 justify-content: center;
             }
 
-            i {
+            div.coeur {
                 margin-right: 30px;
 
                 @media (min-width: 1024px) {
                     margin-left: 30px;
                 }
-            }
 
-            i:hover {
-                font-weight: 900;
-                color: #9356DC;
-                cursor: pointer;
+                i.vide {
+                    font-size: 22px;
+                    position: absolute;
+                    opacity: 100%;
+                    transition: .3s;
+                    cursor: pointer;
+                }
+
+                i.plein {
+                    background: $degrade;
+                    font-size: 22px;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    opacity: 0%;
+                    transition: .3s;
+                    z-index: 1;
+                    cursor: pointer;
+                }
+
+                i.plein:hover {
+                    opacity: 100%;
+                }
             }
 
         }
@@ -239,17 +257,17 @@ section.all {
             }
         }
 
-        // div.menu:nth-child(1) {
-        //     animation-delay: -1s;
-        // }
+        div.menu:nth-child(1) {
+            animation-delay: -1s;
+        }
 
-        // div.menu:nth-child(2) {
-        //     animation-delay: -3s;
-        // }
+        div.menu:nth-child(2) {
+            animation-delay: -3s;
+        }
 
-        // div.menu:nth-child(3) {
-        //     animation-delay: 2s;
-        // }
+        div.menu:nth-child(3) {
+            animation-delay: 2s;
+        }
 
 
     }

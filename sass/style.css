@@ -311,13 +311,31 @@ section.restaurant div.restaurant div.cards a div.card div.info {
 section.restaurant div.restaurant div.cards a div.card div.info div.txt p {
   font-size: 17px;
 }
-section.restaurant div.restaurant div.cards a div.card div.info i {
+section.restaurant div.restaurant div.cards a div.card div.info div.coeur {
   margin-right: 10px;
-  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-section.restaurant div.restaurant div.cards a div.card div.info i:hover {
-  font-weight: 900;
-  color: #9356DC;
+section.restaurant div.restaurant div.cards a div.card div.info div.coeur i.vide {
+  font-size: 22px;
+  position: absolute;
+  opacity: 100%;
+  transition: 0.3s;
+}
+section.restaurant div.restaurant div.cards a div.card div.info div.coeur i.plein {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  font-size: 22px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0%;
+  transition: 0.3s;
+  z-index: 1;
+}
+section.restaurant div.restaurant div.cards a div.card div.info div.coeur i.plein:hover {
+  opacity: 100%;
 }
 section.restaurant div.restaurant div.cards div.new {
   position: absolute;
