@@ -190,9 +190,19 @@ section.all div.all div.menu div.plat div.txt {
   z-index: 1;
   margin-right: -50px;
 }
+section.all div.all div.menu div.plat div.txt h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 section.all div.all div.menu div.plat div.txt div {
   display: flex;
   justify-content: space-between;
+}
+section.all div.all div.menu div.plat div.txt div p:nth-child(1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 section.all div.all div.menu div.plat div.check {
   display: flex;

@@ -211,9 +211,21 @@ section.all {
                     z-index: 1;
                     margin-right: -50px;
 
+                    h3 {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
                     div {
                         display: flex;
                         justify-content: space-between;
+
+                        p:nth-child(1) {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
                     }
                 }
 
