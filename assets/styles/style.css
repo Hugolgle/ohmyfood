@@ -147,11 +147,13 @@ section.all div.all div.head div.coeur i.vide {
   opacity: 100%;
   transition: 0.3s;
   cursor: pointer;
+  top: 45px;
 }
 section.all div.all div.head div.coeur i.plein {
+  top: 45px;
+  position: absolute;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   font-size: 22px;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0%;

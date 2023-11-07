@@ -162,12 +162,15 @@ section.all {
                     opacity: 100%;
                     transition: .3s;
                     cursor: pointer;
+                    top: 45px;
                 }
 
                 i.plein {
+                    top: 45px;
+                    position: absolute;
                     background: $degrade;
                     font-size: 22px;
-                    background-clip: text;
+                    // background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     opacity: 0%;
