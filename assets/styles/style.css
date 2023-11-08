@@ -273,6 +273,7 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: end;
+    padding: 30px 70px;
   }
 }
 footer div.footer {
@@ -287,7 +288,7 @@ footer div.footer {
     flex-direction: row;
     margin-top: 0;
     align-items: end;
-    margin-right: 20px;
+    margin-right: 80px;
   }
 }
 footer div.footer a {
@@ -296,7 +297,7 @@ footer div.footer a {
 }
 @media (min-width: 1024px) {
   footer div.footer a {
-    margin: 0 20px;
+    margin: 0 5px;
   }
 }
 footer div.footer a i {
@@ -308,4 +309,7 @@ footer div.footer a i.hand {
 }
 footer div.footer a.gras {
   font-weight: 500;
+}
+footer div.footer a.gras:nth-child(2) {
+  margin-right: 40px;
 }/*# sourceMappingURL=style.css.map */

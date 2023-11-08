@@ -404,6 +404,7 @@ footer {
         display: flex;
         flex-direction: row-reverse;
         align-items: end;
+        padding: 30px 70px;
     }
 
     div.footer {
@@ -417,7 +418,7 @@ footer {
             flex-direction: row;
             margin-top: 0;
             align-items: end;
-            margin-right: 20px;
+            margin-right: 80px;
         }
 
         a {
@@ -425,7 +426,7 @@ footer {
             font-size: 16px;
 
             @media (min-width: 1024px) {
-                margin: 0 20px;
+                margin: 0 5px;
             }
 
             i {
@@ -440,6 +441,10 @@ footer {
 
         a.gras {
             font-weight: 500;
+        }
+
+        a.gras:nth-child(2) {
+            margin-right: 40px;
         }
     }
 }
