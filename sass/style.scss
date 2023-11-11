@@ -76,7 +76,7 @@ div.loader {
     width: 100%;
     height: 100%;
     background-color: #000000a3;
-    animation: loader 3s forwards;
+    animation: loader 5s forwards;
     z-index: 3;
 
     div.rond {
@@ -120,6 +120,8 @@ div.loader {
 @keyframes loader {
     100% {
         display: none;
+        visibility: hidden;
+        opacity: 0;
     }
 }
 
