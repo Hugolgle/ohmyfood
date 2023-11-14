@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -432,111 +430,6 @@ footer div.footer a.gras {
 }
 footer div.footer a.gras:nth-child(2) {
   margin-right: 40px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "roboto", sans-serif;
-  box-sizing: border-box;
-}
-
-h1.index {
-  font-size: 24px;
-  font-weight: 700;
-}
-@media (min-width: 1024px) {
-  h1.index {
-    font-size: 40px;
-  }
-}
-
-h1.resto {
-  font-size: 28px;
-  font-weight: 400;
-  font-family: "Shrikhand", serif;
-}
-
-h2.index {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-h2.resto {
-  font-size: 16px;
-  font-weight: 300;
-}
-
-h3.index {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-h3.resto {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-p.index {
-  font-size: 17px;
-  font-weight: 300;
-}
-
-p.resto {
-  font-size: 15.04px;
-  font-weight: 300;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-}
-
-button {
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  padding: 15px 24px;
-  border: none;
-  font-size: 16px;
-  border-radius: 50px;
-  box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.2);
-  color: #fff;
-  font-weight: 900;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-button:hover {
-  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 63px;
-}
-@media (min-width: 1024px) {
-  header {
-    height: 96px;
-  }
-}
-header a {
-  position: absolute;
-  left: 15px;
-}
-header img {
-  width: 162px;
-  font-weight: 400;
-}
-@media (min-width: 1024px) {
-  header img {
-    width: 200px;
-  }
 }
 
 div.img {
