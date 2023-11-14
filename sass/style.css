@@ -486,7 +486,7 @@ section.all div.all div.menu div.plat div.txt {
   background-color: #ffffff;
   border-radius: 10px;
   height: 60px;
-  padding: 0 10px;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -502,6 +502,8 @@ section.all div.all div.menu div.plat div.txt div.description {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 90%;
+  margin-left: 7px;
+  padding: 5px;
 }
 section.all div.all div.menu div.plat div.txt div.description h3 {
   overflow: hidden;
@@ -518,25 +520,28 @@ section.all div.all div.menu div.plat div.txt div.prix {
   align-items: end;
   justify-content: end;
   width: 10%;
+  margin-right: 7px;
 }
 section.all div.all div.menu div.plat div.txt div.prix p {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
+  font-weight: 400;
 }
-section.all div.all div.menu div.plat div.check {
+section.all div.all div.menu div.plat div.txt div.check {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 0px;
+  min-width: 0px;
   height: 60px;
   background-color: #99E2D0;
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px 10px 10px 10px;
   color: #ffffff;
   cursor: pointer;
   transition: 1s;
 }
-section.all div.all div.menu div.plat:hover div.check {
+section.all div.all div.menu div.plat div.txt:hover div.check {
   width: 60px;
-  border-radius: 10px 0 0 10px;
+  min-width: 60px;
 }
 section.all div.all div.menu > h2 {
   margin-bottom: 10px;
