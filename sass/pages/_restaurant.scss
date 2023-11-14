@@ -1,0 +1,227 @@
+@import '../_general.scss';
+@import '../composants/_header.scss';
+
+div.img {
+    height: 200px;
+
+    @media (min-width: 1024px) {
+        height: 290px;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+
+        @media (min-width: 1024px) {
+            object-position: 0px -260px;
+        }
+    }
+}
+
+section.all {
+    display: flex;
+    justify-content: center;
+
+    div.all {
+        background-color: #f6f6f6;
+        border-radius: 20px 20px 0 0;
+        margin-top: -45px;
+        position: relative;
+        padding: 35px 10px;
+        width: 100%;
+        max-width: 1440px;
+
+        @media (min-width: 768px) {
+            margin-top: -25px;
+            width: 75%;
+            padding: 35px 120px;
+        }
+
+        div.head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+
+            @media (min-width: 1024px) {
+                justify-content: center;
+            }
+
+            div.coeur {
+                margin-right: 30px;
+
+                @media (min-width: 1024px) {
+                    margin-left: 30px;
+                }
+
+                i.vide {
+                    font-size: 22px;
+                    position: absolute;
+                    opacity: 100%;
+                    transition: .3s;
+                    cursor: pointer;
+                    top: 45px;
+                }
+
+                i.plein {
+                    top: 45px;
+                    position: absolute;
+                    background: $degrade;
+                    font-size: 22px;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    opacity: 0%;
+                    transition: .3s;
+                    z-index: 1;
+                    cursor: pointer;
+                }
+
+                i.plein:hover {
+                    opacity: 100%;
+                }
+            }
+
+        }
+
+        div.menu {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: space-evenly;
+            margin: 10px 0;
+            opacity: 0%;
+            animation: 3s anim forwards;
+            transition: 1s;
+
+            div.plat {
+                display: flex;
+                overflow: hidden;
+                margin: 5px 0;
+                width: 100%;
+
+                div.txt {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    height: 60px;
+                    padding: 0 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    transition: 1s;
+                    z-index: 1;
+                    width: 100%;
+                    // margin-right: -50px;
+
+
+
+                    div.description {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: 90%;
+
+                        h3 {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+
+                        p {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                    }
+
+                    div.prix {
+                        display: flex;
+                        align-items: end;
+                        justify-content: end;
+                        width: 10%;
+
+                        p {
+                            margin-bottom: 3px;
+                        }
+                    }
+                }
+
+                div.check {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 0px;
+                    height: 60px;
+                    background-color: #99E2D0;
+                    border-radius: 0 10px 10px 0;
+                    color: #ffffff;
+                    cursor: pointer;
+                    transition: 1s;
+                }
+            }
+
+            div.plat:hover div.check {
+                width: 60px;
+                border-radius: 10px 0 0 10px;
+            }
+
+            >h2 {
+                margin-bottom: 10px;
+            }
+
+            >h2::after {
+                content: "";
+                display: block;
+                position: relative;
+                bottom: -3px;
+                width: 30px;
+                height: 2px;
+                background: #98e2cf;
+            }
+        }
+
+
+
+        @keyframes anim {
+            100% {
+                opacity: 100%;
+            }
+        }
+
+        div.entre {
+            animation-delay: .3s;
+        }
+
+        div.plat {
+            animation-delay: .6s;
+        }
+
+        div.dessert {
+            animation-delay: .9s;
+        }
+
+
+    }
+
+    div.btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+        a {
+            background: $degrade;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 40px;
+            font-size: 13px;
+            color: #fff;
+            font-weight: 900;
+        }
+    }
+}
